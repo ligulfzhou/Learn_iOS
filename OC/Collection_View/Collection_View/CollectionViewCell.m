@@ -8,7 +8,40 @@
 
 #import "CollectionViewCell.h"
 
+@interface CollectionViewCell()
+{
+    UILabel *label;
+}
+@end
+
 @implementation CollectionViewCell
+
+-(instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        if (_title) {
+            label.text = _title;
+        }else{
+            label.text = @"text";
+        }
+        [self.viewForFirstBaselineLayout addSubview:label];
+    }
+    return self;
+}
+
+-(void)setTitle:(NSString *)title
+{
+    _title = title;
+    label.text = title;
+}
+//
+//-(void)setTitle:(NSString *)title
+//{
+//    _title = title;
+//    self.label.text = title;
+//}
 
 //-(instancetype)initWithFrame:(CGRect)frame
 //{
