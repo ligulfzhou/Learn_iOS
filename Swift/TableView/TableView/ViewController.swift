@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let refreshControll = UIRefreshControl()
+        self.title = "table view"
         
         tableview = UITableView(frame: view.bounds, style: .Grouped)
         tableview.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "identifier")
@@ -23,13 +23,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableview.delegate = self
         tableview.center = view.center
         
-//        tableview.addSubview(refreshControll)
         view.addSubview(tableview)
     }
-//    
-//    override func prefersStatusBarHidden() -> Bool {
-//        return true
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

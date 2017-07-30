@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         slider.maximumValue = 100
         slider.addTarget(self, action: "sliderTarget:", forControlEvents: .ValueChanged)
         
+//      slider.setThumbImage(UIImage(named: "ThumbNormal"), forState: .Normal)
+//      slider.setThumbImage(UIImage(named: "ThumbHighlighted"), forState: .Highlighted)
+        
         view.addSubview(slider)
     }
 

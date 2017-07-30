@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let notification = UILocalNotification()
         //time and timezone settings
-        notification.fireDate = NSDate(timeIntervalSinceNow: 8)
+        notification.fireDate = NSDate(timeIntervalSinceNow: 10)
         notification.timeZone = NSCalendar.currentCalendar().timeZone
         notification.alertBody = "A new item is downloaded"
         

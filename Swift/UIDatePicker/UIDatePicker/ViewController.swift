@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //MARK: uidatepicker 的 target func
     func datePickerChange(sender: UIDatePicker){
         NSLog("\(sender.date)")
     }

@@ -10,10 +10,19 @@ import UIKit
 
 class PhotosViewController: UIViewController {
 
+    var imageNames: [String]!
+    var imageView: UIImageView!
+    var currentIndex: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageView = UIImageView(frame: view.bounds)
+        imageView.image = UIImage(named: imageNames[0])
+        imageView.sizeToFit()
+        view.addSubview(imageView)
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "panGesture:"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +30,16 @@ class PhotosViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func panGesture(sender: UIPanGestureRecognizer){
+        if currentIndex < imageNames.count - 1{
+            currentIndex += 1
+            imageView.removeFromSuperview()
+            imageView = UIImageView(frame: view.bounds)
+            imageView.image = UIImage(named: imageNames[currentIndex])
+            imageView.sizeToFit()
+            view.addSubview(imageView)
+        }
+    }
 
     /*
     // MARK: - Navigation

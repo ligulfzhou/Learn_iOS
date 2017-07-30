@@ -37,9 +37,9 @@ class ViewController: UIViewController {
         print("the sender is \(sender)")
         
         if sender.on{
-            print("the switcher is onnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")
+            NSLog("the switcher is onnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")
         }else{
-            print("the swither is offffffffffffffffffffffffffffff")
+            NSLog("the swither is offffffffffffffffffffffffffffff")
         }
     }
 }

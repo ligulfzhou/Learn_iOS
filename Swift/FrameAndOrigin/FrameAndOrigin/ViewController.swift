@@ -12,10 +12,18 @@ class ViewController: UIViewController {
 
     var label:UILabel!
     var button:UIButton!
+    var activityIndicator:UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        activityIndicator.frame.origin = CGPoint(x: 400, y: 200)
+        activityIndicator.frame.size = CGSize(width: 50, height: 50)
+        view.addSubview(activityIndicator)
+        
         label = UILabel()
+        label.backgroundColor = UIColor.yellowColor()
         label.text = "dddd"
         label.frame.origin = CGPoint(x: 0, y: 0)
         label.frame.size = CGSize(width: 100, height: 100)
@@ -38,9 +46,19 @@ class ViewController: UIViewController {
     // buttonClicked, button target function
     func buttonClicked(sender: UIButton){
         if label.frame.origin.x == 0{
+            label.alpha = 1
             label.frame.origin = CGPoint(x: 200, y: 200)
+            //tintcolor ，是选中之后的颜色
+            button.tintColor = UIColor.redColor()
+            
+            activityIndicator.startAnimating()
+//            view.addSubview(activityIndicator)
+            
         }else{
+            label.alpha = 0.2
             label.frame.origin = CGPoint(x: 0, y: 0)
+            label.tintColor = UIColor.blueColor()
+//            activityIndicator.removeFromSuperview()
         }
     }
 }

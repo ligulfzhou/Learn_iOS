@@ -12,6 +12,7 @@
 		507949871C755D2F003E2AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507949851C755D2F003E2AF1 /* Main.storyboard */; };
 		507949891C755D2F003E2AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507949881C755D2F003E2AF1 /* Assets.xcassets */; };
 		5079498C1C755D2F003E2AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5079498A1C755D2F003E2AF1 /* LaunchScreen.storyboard */; };
+		507949941C755FEA003E2AF1 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507949931C755FEA003E2AF1 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		507949881C755D2F003E2AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5079498B1C755D2F003E2AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5079498D1C755D2F003E2AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507949931C755FEA003E2AF1 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				507949881C755D2F003E2AF1 /* Assets.xcassets */,
 				5079498A1C755D2F003E2AF1 /* LaunchScreen.storyboard */,
 				5079498D1C755D2F003E2AF1 /* Info.plist */,
+				507949931C755FEA003E2AF1 /* PhotosViewController.swift */,
 			);
 			path = UIImageSlidesView;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				507949941C755FEA003E2AF1 /* PhotosViewController.swift in Sources */,
 				507949841C755D2F003E2AF1 /* ViewController.swift in Sources */,
 				507949821C755D2F003E2AF1 /* AppDelegate.swift in Sources */,
 			);

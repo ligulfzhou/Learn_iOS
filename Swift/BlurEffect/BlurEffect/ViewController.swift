@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         blurView.center = view.center
         view.addSubview(blurView)
         
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

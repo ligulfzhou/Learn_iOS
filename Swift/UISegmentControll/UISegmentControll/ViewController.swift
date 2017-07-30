@@ -22,9 +22,13 @@ class ViewController: UIViewController {
         segments = UISegmentedControl(items: items)
 //        segments.frame = CGRectMake(0, 0, 300, 50)
         segments.center = view.center
-        
-//        segments.momentary = true 
+        segments.addTarget(self, action: "segmentSelect:", forControlEvents: .TouchDown)
+//        segments.momentary = true
         view.addSubview(segments)
+    }
+    
+    func segmentSelect(sender: UISegmentedControl){
+        print("ddddddddddd")
     }
 
     override func didReceiveMemoryWarning() {

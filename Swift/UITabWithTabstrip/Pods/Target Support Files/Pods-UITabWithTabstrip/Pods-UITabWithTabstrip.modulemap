@@ -1,0 +1,6 @@
+framework module Pods_UITabWithTabstrip {
+  umbrella header "Pods-UITabWithTabstrip-umbrella.h"
+
+  export *
+  module * { export * }
+}
